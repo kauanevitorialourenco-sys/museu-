@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Museu Virtual do Paraná</title>
+
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f0f4f0;
+  color: #333;
+}
+
+header {
+  background: linear-gradient(90deg, #2e7d32, #1b5e20);
+  color: white;
+  text-align: center;
+  padding: 25px;
+}
+
+nav {
+  background: #1b5e20;
+  text-align: center;
+  padding: 10px;
+}
+
+nav a {
+  color: white;
+  margin: 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+section {
+  background: white;
+  margin: 15px;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+h2 {
+  color: #2e7d32;
+}
+
+img {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+button {
+  padding: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  background: #2e7d32;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #1b5e20;
+  color: white;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>🏛️ Museu Virtual do Paraná</h1>
+  <p>História, cultura, economia e natureza do estado</p>
+</header>
+
+<nav>
+  <a href="#historia">História</a>
+  <a href="#economia">Economia</a>
+  <a href="#cultura">Cultura</a>
+  <a href="#turismo">Turismo</a>
+  <a href="#quiz">Quiz</a>
+  <a href="#jogo">Jogo</a>
+</nav>
+
+<!-- HISTÓRIA -->
+<section id="historia">
+<h2>🌎 História do Paraná</h2>
+<p>O Paraná foi formado por povos indígenas como Kaingang e Guarani e depois recebeu imigrantes europeus e asiáticos.</p>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Cataratas_do_Igua%C3%A7u.jpg" alt="Paraná">
+</section>
+
+<!-- ECONOMIA -->
+<section id="economia">
+<h2>🌾 Economia</h2>
+<p>O estado é forte no agronegócio com soja, milho, trigo e frango, além da indústria automobilística e alimentícia.</p>
+</section>
+
+<!-- CULTURA -->
+<section id="cultura">
+<h2>🎭 Cultura</h2>
+<p>Destacam-se o Fandango Caiçara, festas típicas de imigrantes e o folclore brasileiro.</p>
+</section>
+
+<!-- TURISMO -->
+<section id="turismo">
+<h2>🌄 Turismo</h2>
+<p>Principais atrações: Cataratas do Iguaçu, Parque Nacional do Iguaçu e litoral paranaense.</p>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/1/1e/Iguazu_Falls_Brazil.jpg">
+</section>
+
+<!-- QUIZ -->
+<section id="quiz">
+<h2>🧠 Quiz do Paraná</h2>
+
+<p>1. Qual é a principal atração turística?</p>
+<button onclick="alert('Correto! Cataratas do Iguaçu')">Cataratas do Iguaçu</button>
+<button onclick="alert('Errado')">Pão de Açúcar</button>
+
+<p>2. Qual é a principal atividade econômica?</p>
+<button onclick="alert('Correto! Agronegócio')">Agronegócio</button>
+<button onclick="alert('Errado')">Mineração de ouro</button>
+</section>
+
+<!-- JOGO -->
+<section id="jogo">
+<h2>🎮 Jogo: Adivinhe o estado</h2>
+
+<p>Este estado é famoso pelas Cataratas do Iguaçu. Qual é?</p>
+
+<button onclick="resposta(true)">Paraná</button>
+<button onclick="resposta(false)">Bahia</button>
+<button onclick="resposta(false)">Amazonas</button>
+
+<p id="resultado"></p>
+</section>
+
+<script>
+function resposta(correto){
+  if(correto){
+    document.getElementById("resultado").innerHTML = "🎉 Correto! Você acertou!";
+  } else {
+    document.getElementById("resultado").innerHTML = "❌ Tente novamente!";
+  }
+}
+</script>
+
+<footer>
+<p>Projeto educativo - Museu Virtual do Paraná</p>
+</footer>
+
+</body>
+</html>
